@@ -16,7 +16,7 @@ public class Main {
     }
 
     public static int returnMax(int[] arr, int count){
-        if(count >= n-1){
+        if(count > n-1){
             return max;
         }
         int max2 =arr[count++];
