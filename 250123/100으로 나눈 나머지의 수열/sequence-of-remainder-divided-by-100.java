@@ -13,7 +13,7 @@ public class Main {
     }
 
     public static int printSY100(int n){
-        if(count == N || count > 20){
+        if(count == N){
             return n % 100;
         }
         count++;
