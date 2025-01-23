@@ -20,19 +20,20 @@ public class Main {
 
     public static int printSY100(int n){
         if(count == N){
-            return n % 100;
+            return n;
         }
         count++;
         if(count == 3){
             a = 2;
             b = 4;
         }else{
+            int temp = a;
             a = b;
             b = n;
         }
 
         // System.out.println("a :: "+a +"\nb :: " + b + "count" + count + "\n n :: "+a*b);
 
-        return printSY100(a * b);
+        return printSY100((a * b) % 100);
     }
 }
