@@ -9,7 +9,13 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         N = sc.nextInt();
 
-        System.out.print(printSY100(N));
+        if(N == 1){
+             System.out.print(2);
+        }else if(N == 2){
+            System.out.print(4);
+        }else{
+            System.out.print(printSY100(N));
+        } 
     }
 
     public static int printSY100(int n){
