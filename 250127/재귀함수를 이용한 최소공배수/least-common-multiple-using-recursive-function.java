@@ -10,7 +10,7 @@ public class Main {
             arr[i] = sc.nextInt();
         }
 
-        int answer = arr[1];
+        long answer = arr[0];
         for(int i=1; i<n; i++){
             answer = llm(answer,arr[i]);
         }
@@ -18,18 +18,17 @@ public class Main {
         System.out.print(answer);
     }
 
-    public static int llm(int a, int b){
+    public static long llm(long a, long b){
         return a * b / gcd(a,b);
     }
 
-    public static int gcd(int a, int b){
-        int min = Math.min(a,b);
-        int max = Math.max(a,b);
-
-        if(max % min == 0){
-            return min;
-        }else{
-            return 1;
+    public static long gcd(long a, long b){
+        //두 양의 정수 a, b(a > b)에 대해서 a를 b로 나눈 나머지를 r이라 하면, a와 b의 최대공약수는 b와 r의 최대공약수와 같다
+        while(b != 0) {
+            long r = a % b;
+            a = b;
+            b = r;
         }
+        return a;
     }
 }
