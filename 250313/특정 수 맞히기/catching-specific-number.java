@@ -13,9 +13,10 @@ public class Main {
                 System.out.println("Lower");
             }else{
                 System.out.println("Good");
-            }
-
-            
+                break;
+            } 
         }
+
+        sc.close();
     }
 }
