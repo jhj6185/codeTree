@@ -5,8 +5,8 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int m = sc.nextInt();
-        int[][] arr1= new int[4][4];
-        int[][] arr2 = new int[4][4];
+        int[][] arr1= new int[n][m];
+        int[][] arr2 = new int[n][m];
 
         for(int i=0; i<n; i++){
             for(int j=0; j<m; j++){
