@@ -22,12 +22,11 @@ public class Main {
 
         for(int i=0; i<n; i++){
             for(int j=0; j<m; j++){
-                int num= 0;
                 if(arr1[i][j] != arr2[i][j]){
-                    num = 1;
+                    System.out.print(1 + " ");
+                }else{
+                    System.out.print(0 + " ");
                 }
-
-                System.out.print(num + " ");
             }
             System.out.println();
         }
