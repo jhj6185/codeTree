@@ -6,6 +6,6 @@ public class Main {
         String str = sc.next().replace(".","-");
         String[] arr = str.split("-");
 
-        System.out.printf("%d-%d-%d",arr[1],arr[2],arr[0]);
+        System.out.printf("%s-%s-%s",arr[1],arr[2],arr[0]);
     }
 }
